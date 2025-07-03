@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heranca e especificidade</title>
+
+    <style>
+        /* 
+            inherit -> herda do pai um valor de propriedade
+        
+            --Heranca--
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: black;
+                border: 1px solid red;
+                padding: 3em;
+                margin: 2em;
+            }
+            h1{           
+                color: violet;
+                border: inherit;
+                font-size: inherit;
+            }
+
+            Especificidade
+            E a maneira de como os navegadores definem quais
+            valores de propriedades sao os mais relevantes para o elemento a ser utilizado. A especifidade e baseada apenas nas regras impostas na composicao de diferentes tipos de seletores
+
+            Ordem de aplicacao das formatacoes:
+            1 -> Regra com !important
+            2 -> Seletores mais especificos
+            3 -> Ultima regra processada
+
+            Seletores mais especificos:
+            1) inline style
+            2) IDs
+            3) Classes, atributos e pseudo-classes
+            4) Elementos e pseudo-elementos
+
+            Batalha de especifidade
+            Inline x id = Inline
+            Id x Classes, atributos e pseudo-classes= Id
+            Elementos e pseudo-elementos x Classes, atributos e pseudo-classes = Classes, atributos e pseudo-classes
+
+            p{
+                color: blueviolet !important ;
+            }
+
+            p{
+                color: red;
+            }
+
+            
+        
+            Seletor de atributos
+            p[id]{
+                border: 1px solid red;
+            }
+            Ele seleciona todos os p que tem o atributo id
+            
+        */
+        
+    </style>
+
+</head>
+<body>
+    <h1 id="teste">Titulo</h1>
+    <p  class="destaque">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi voluptas possimus voluptate voluptatum tenetur, harum, sint commodi nemo consequatur quae reprehenderit recusandae perspiciatis, magnam sunt corrupti veritatis tempora id!
+    </p>
+    <p class="teste">
+        Vero, eaque laudantium tempora quam quasi molestias sit deserunt nesciunt sed repellat impedit id dolore neque unde facilis quos. Tenetur excepturi aperiam quasi reprehenderit corporis libero quisquam provident velit dignissimos?
+    </p>
+    <p>Texto padrao</p>
+</body>
+</html>

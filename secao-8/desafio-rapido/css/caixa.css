@@ -1,0 +1,14 @@
+h1{
+    background-color: lightskyblue;
+    color: black;
+    border: 3px solid rgb(158, 158, 168);
+    padding: 20px;
+    margin: 15px;
+}
+p{
+    background-color: blanchedalmond;
+    color: slateblue;
+    border: 2px solid royalblue;
+    padding: 12px;
+    margin: 15px;
+}

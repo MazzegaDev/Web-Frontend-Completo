@@ -1,0 +1,17 @@
+a{
+    color: green;
+}
+p{
+    color: rgba(11, 0, 50, 0.6);
+}
+li{
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+table{
+    border: 5px solid darkred;
+    background-color: coral;
+}
+td{
+    border: 2px solid black;
+}

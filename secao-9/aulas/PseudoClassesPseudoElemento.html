@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes - Pseudo elemento</title>
+    <style>
+        /*
+            Pseudo classe
+            a:hover{
+                background-color: purple;
+                color: white;
+            }
+        */
+        
+        /*
+            Links 
+        */
+        a, a:link{
+            text-decoration: none;
+            color: green;
+            padding: 0.5em 1em;
+        }
+        a:hover{
+            background-color: green;
+            color: white;
+        }
+        /* 
+            Links nao visitados
+            a:link{
+                color: gray;
+            }
+        */
+        
+        /* 
+            Links visitados
+            a:visited{
+                color: bisque;
+            }
+        */
+       /*
+        Links ativos 
+       */
+       a:active{
+            color: cadetblue;
+        }
+        /* 
+            Formularios
+        */
+        input:checked{
+            margin-left: 20px;
+        }
+        input:focus{
+            background-color: cadetblue;
+            color: white;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+        /* 
+            Pseudo elemento
+        */
+        p::first-line{
+            color: red;
+        }
+        p::first-letter{
+            font-size: 3em;
+            color: purple;
+        }
+        p::selection{
+            background-color: yellow;
+        }
+
+        h2::before{
+            content: '{';
+            color: violet;
+        }
+        h2::after{
+            content: '}';
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Conteudo da DIV
+    </div>
+
+    <h2>Conteudo do h2</h2>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit ullam pariatur veniam ex, deleniti eos quas ut. Ad quisquam molestias dignissimos iste mollitia a aspernatur eum numquam illum modi.
+    </p>
+
+    <a href="">Google</a> |
+    <a href="https://github.com/">GitHub</a> |
+    <a href="">Instagram</a> |
+    <a href="https://banana.com/">Banana</a> |
+
+    <h2>Formulario</h2>
+    <input type="checkbox"> aceito <br>
+    <input type="radio" name="op"> sim <br>
+    <input type="radio" name="op"> nao <br>
+    <input type="text" required placeholder="Digite seu nome">
+    <input type="text" placeholder="Digite seu telefone">
+</body>
+</html>

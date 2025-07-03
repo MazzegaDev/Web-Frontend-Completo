@@ -1,0 +1,13 @@
+a{
+    color: lightskyblue;
+    padding: 25px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+a:active{
+    background-color: violet;
+    color: blue;
+}

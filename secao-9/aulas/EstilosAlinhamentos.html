@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos e alinhamentos</title>
+    <style>
+        body{
+            font-size: 1.5em;
+            font-family: 'Arial', sans-serif;
+        }
+    
+        .negrito{
+            font-weight: bold;
+        }
+
+        .italic{
+            /* Normal, italic, oblique */
+            font-style: italic;
+        }
+        /* Oblique é um estilo de fonte que inclina o texto, mas não necessariamente segue a mesma regra de itálico */
+        .oblique{
+            font-style: oblique;
+        }
+        /* Transformação de texto
+        Uppercase, lowercase, capitalize */
+        .transformacao{
+            text-transform: capitalize;
+        }
+        h1{
+            text-transform: uppercase;
+        }
+        .decoracao{
+            text-decoration: line-through;    
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .entrelinhas{
+            border: 1px solid red;
+            line-height: 5em;
+        }
+        .espacamento{
+            letter-spacing: 0.5em;
+            word-spacing: 0.6em;
+        }
+        .recuado{
+            text-indent: 2em;
+        }
+
+        .alinhamento{
+
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatacoes de textos</h1>
+    <p class="negrito">Texto negrito</p>
+    <p class="italic">Texto com estilo italico</p>
+    <p class="oblique">Texto com estilo oblique</p>
+    <p class="transformacao">Texto com transformacao</p>
+    <p class="decoracao">Texto com decoracao</p>
+    <a href="">Google</a>
+    <p class="entrelinhas">Texto entrelinhas</p>
+    <p class="espacamento">Texto com espcao entre letras e palavras</p>
+    <p class="recuado">Texto recuado</p>
+    <p>Texto normal</p>
+
+    <h1>Alinhamentos de texto</h1>
+    <p class="alinhamento">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reprehenderit deleniti, corporis commodi repellat omnis error, qui asperiores nostrum dicta similique quae nesciunt iure quasi. Esse distinctio aperiam minus soluta!
+    </p>
+</body>
+</html>

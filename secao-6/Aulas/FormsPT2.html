@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - parte 2</title>
+</head>
+<body>
+    <!--
+        <label> -> Legenda para item da interface
+        for -> para
+        fieldset -> Conjunto de campos
+        legend -> Legenda para conjunto de campos
+    -->
+    <h1>Formularios - pt2</h1>
+    <form action="processa.html" method="get">
+        <h2>Label</h2>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+
+        <br>
+
+        <h2>Mais elementos de formularios</h2>
+        <!--
+            Desafio rapido -> Utilizar labels
+        -->
+        <h3>Genero</h3>
+        <input type="radio" name="genero" value="feminino" id="fem">
+        <label for="fem">feminino</label>
+
+        <br>
+        <input type="radio" name="genero" value="masculino" id="masc">
+        <label for="masc">Masculino</label>
+
+        <br>
+        
+        <h3>Estilo musical</h3>      
+        <input type="checkbox" name="estilo" value="rock" id="rock">
+        <label for="rock">Rock</label>
+
+        <input type="checkbox" name="estilo" value="pop" id="pop">
+        <label for="pop">Pop</label>
+
+        <input type="checkbox" name="estilo" value="sertanejo" id="sert">
+        <label for="sert">Sertanejo</label>
+
+        <br>
+
+        <h3>Estado</h3>
+        <select name="estado" id="">
+
+            <option value="">Selecione....</option>
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="mg">MG</option>
+
+        </select>
+
+        <br>
+
+        <h3>Upload de arquivos</h3>
+        <br>
+        <input type="file" name="arquivo">
+        <br><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <form action="">
+        <h2>Fieldset e legend</h2>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome2">Nome:</label>
+            <input type="text" name="nome" id="nome2">
+
+            <label for="email2">Email:</label>
+            <input type="text" name="email" id="email2">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Adicionais</legend>
+
+            <h3>Genero</h3>
+            <input type="radio" name="genero2" value="feminino" id="fem">
+            <label for="fem">feminino</label>
+
+        
+            <input type="radio" name="genero2" value="masculino" id="masc">
+            <label for="masc">Masculino</label>
+        </fieldset>
+    </form>
+</body>
+</html>

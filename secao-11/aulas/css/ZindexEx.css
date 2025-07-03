@@ -1,0 +1,32 @@
+.caixa{
+    background-color: purple;
+    position: relative;
+    width: 700px;
+    z-index: 0;
+}
+.destaque{
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    width: 110px;
+    padding: 10px 16px;
+    position: absolute;
+    z-index: 1;
+    left: 26px;
+    bottom: 36px;
+    
+}
+.promocao{
+    background-color: white;
+    border: 2px dotted purple;
+    color: purple;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    bottom: -56px;
+    left: 10%;
+    right: 10%;
+    padding: 26px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption{
+            background-color: black;
+            color: white;
+        }
+        thead{
+            background-color: darkorange;
+            color: white;
+        }
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <caption> -> Legenda / titulo da tabela
+        <thead> -> Table Header (Cabecalho da tabela)
+        <tbody> -> Table Body (Corpo da tabela)
+        <tfoot> -> Table Footer (Rodape da tabela)
+    -->
+    <h1>
+        Mais sobre tabelas
+    </h1>
+
+    <table border="1">
+        <caption>
+            Listagem de produtos
+        </caption>
+
+        <thead>
+            <tr>
+                <th>
+                    Produto
+                </th>
+                <th>
+                    Quantidade
+                </th>
+                <th>
+                    Preco
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    Notebook
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    R$ 1500
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Mouse
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    R$ 200
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    Total
+                </td>
+                <td colspan="2">
+                    R$1700
+                </td>
+            </tr> 
+        </tfoot>
+    </table>
+</body>
+</html>

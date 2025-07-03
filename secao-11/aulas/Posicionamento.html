@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        body{
+            background: purple;
+        }
+        #container{
+            width: 700px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 8px;
+            position: relative;
+            border: 2px solid greenyellow;
+        }
+        .borda{
+            border: 1px solid red;
+        }
+        /* Fluxo normal dos elementos */
+        .estatica{
+            position: static;
+        }
+        /* 
+            Diferenca de usar margin e top/left/bottom/right
+            -> Quando usamos o margin o elemento e empurrado
+            -> Quando usamos por exemplo o top o elemento e espacado do topo porem sem empurar os outros elementos para baixo
+        */
+
+        /* 
+            Quando usamos qualquer propriedade de posicionamento na position relativa, ela e alinhada na propria posicao do elemento
+        */
+        .relativa{
+            position: relative;
+            /* margin-top: 80px; */
+            /* top: 30px; */
+            /* left: 30px; */
+            right: 30px;
+            /* bottom: 30px; */
+            /* top: 50px; */
+        }
+        /* 
+            Alinhamento com position: absolute:
+            -> Um elemento com position: absolute é posicionado em relação ao seu ancestral mais próximo que tenha uma posição diferente de static (ou seja, relative, absolute, fixed ou sticky).
+            -> Se nenhum ancestral tiver uma posição definida (todos forem static), o elemento será alinhado em relação ao elemento <body> ou à janela de visualização (viewport).
+            -> Ao definir propriedades como top, right, bottom ou left, o posicionamento será calculado a partir desse ancestral posicionado.
+        */
+        .absoluta{
+            position: absolute;
+            top: 10px;
+            /* bottom: 0; */
+            margin: 0;
+            /* left: 30px; */
+            right: 0;
+            width: 185px;
+        }
+
+        .fixo{
+            position: fixed;
+            width: 200px;
+            height: 120px;
+            /* bottom: 0; */
+            /* left: 0; */
+            top: 50%;
+            right: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <div class="fixo" style="background-color: lightblue;">
+            <h3>Chat</h3>
+            <button>Enviar mensagem</button>
+        </div>
+
+
+        <h1 class="borda">Posicao Absoluta</h1>
+        <p class="borda absoluta" style="background-color: lightpink;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci atque minima nemo delectus tempora impedit at dolor omnis quisquam, necessitatibus voluptatum laboriosam ratione officia numquam. Eos, quam. Perspiciatis, quasi.
+        </p>
+        <hr>
+        <h1 class="borda">Posicao relativa</h1>
+        <p class="borda relativa" style="background-color: lightgreen;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci atque minima nemo delectus tempora impedit at dolor omnis quisquam, necessitatibus voluptatum laboriosam ratione officia numquam. Eos, quam. Perspiciatis, quasi.
+        </p>
+        <hr>
+        <h1 class="borda estatica">Fluxo normal</h1>
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci atque minima nemo delectus tempora impedit at dolor omnis quisquam, necessitatibus voluptatum laboriosam ratione officia numquam. Eos, quam. Perspiciatis, quasi.
+        </p>
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci atque minima nemo delectus tempora impedit at dolor omnis quisquam, necessitatibus voluptatum laboriosam ratione officia numquam. Eos, quam. Perspiciatis, quasi.
+        </p>
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci atque minima nemo delectus tempora impedit at dolor omnis quisquam, necessitatibus voluptatum laboriosam ratione officia numquam. Eos, quam. Perspiciatis, quasi.
+        </p>
+
+    </div>
+</body>
+</html>

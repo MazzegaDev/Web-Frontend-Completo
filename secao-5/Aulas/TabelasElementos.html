@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Tabelas: Elementos de tabelas
+    </title>
+  
+</head>
+<body>
+    <!--
+        <table> -> tabela
+        <tr> -> Table row (linha da tabela)
+        <td> -> Table data (dados da tabela/Celulas)
+        <th> -> Table header
+    -->
+    <h1>
+        Tabelas
+    </h1>
+    <table border="1">
+        <tr>
+            <th>
+                Produto
+            </th>
+            <th>
+                Quantidade
+            </th>
+            <th>
+                Preco
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                Notebook
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                R$ 1500
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mouse
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                R$ 285
+            </td>
+        </tr>
+        <!--
+            colspan -> extensao da coluna
+            rowspan -> extensao da linha
+        -->
+        <tr>
+            <td rowspan="2">
+                Desconto
+            </td>
+            <td colspan="2">
+                Cupom 1 - R$ 20
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Cupom 2 - R$ 50
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

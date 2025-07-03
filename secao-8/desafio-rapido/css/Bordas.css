@@ -1,0 +1,15 @@
+h1{
+    background-color: lightblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 4px dotted black;
+    padding: 8px;
+}
+p{
+    background-color: lightcoral;;
+    border-right: 12px solid lavender;
+    border-left: 12px solid lavender;
+    padding: 8px;
+    border-radius: 20px;
+    
+}

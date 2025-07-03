@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: dodgerblue;
+    padding: 10px;
+    a{
+        background-color: lightskyblue;
+        border: 1px solid white;
+        margin: 8px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+.promo{
+    background-color: purple;
+}
+
+.banner{
+    background-color: purple;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.produtos{
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.destaques{
+    width: 1000px;
+    margin: 10px auto;
+}

@@ -1,0 +1,13 @@
+.principal{
+    
+    border: 1px solid red;
+    width: 920px;
+    margin: 0 auto;
+}
+.float{
+    float: left;
+    width: 280px;
+    margin: 7px;
+    padding: 5px;
+    background: lightgray;
+}

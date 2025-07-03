@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores PT2</title>
+    <style>
+        /*
+            Seletor de filho
+            div>h1 -> todos h1 que sao filhos diretos dessa div
+
+            div>h1{
+                background-color: orange;
+            }
+            li>a{
+                color: brown;
+                text-decoration: none;
+            }
+        */
+        /*
+            Seletor descendente
+            div h1 -> todos os h1 que estao dentro de div
+
+            div h1{
+                background-color: aquamarine;
+            }
+            li a{
+                color: brown;
+                text-decoration: none;
+            }
+        */
+        /* 
+            Seletor de irmao adjacente
+            h1+p -> Seleciona todo p que for irmao direto de h1
+
+            h1+p{
+                color: brown;
+                border: 1px solid brown;
+            }
+        */
+        /* 
+            Seletor de irmao geral
+            h1~p -> Seleciona todos os p que sao irmaos de h1
+            h1~p{
+                color: cadetblue;
+                border: 1px solid cadetblue;
+            }
+            p~a{
+                color: blanchedalmond;
+            }
+        */
+        
+    </style>  
+</head>
+<body>
+    <p>Teste</p>
+    <a href="">Link de teste</a>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iste asperiores quaerat vero accusamus possimus commodi, vel corrupti sint itaque, rerum, ipsam facere neque suscipit ea quam illum quisquam facilis?
+    </p>
+
+    <h1>Seletor de irmao adjacente e geral</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis assumenda esse consequuntur illum enim numquam, deleniti, iure eos velit libero quisquam provident quo quibusdam consectetur consequatur labore! Nobis, illum.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et laudantium similique officia sint quasi a! Sunt error ab debitis quidem, quibusdam ad nesciunt asperiores quia delectus commodi. Tenetur, cupiditate.
+    </p>
+
+    <div style="border: 1px solid black;">
+        <h1 class="destaque titulo">Titulo da pagina</h1>
+        <span style="background-color: gray;">
+            <h1 class="destaque titulo">Titulo da pagina</h1>
+        </span>
+    </div>
+    <ul>
+        <li>
+           <a href="">Home</a>
+           <span>
+                <a href="">Outro link</a>
+           </span>
+        </li>
+        <li>
+            <a href="">Sobre</a>
+        </li>
+    </ul>
+    <h2 class="destaque">Subtitulo da pagina</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis assumenda esse consequuntur illum enim numquam, deleniti, iure eos velit libero quisquam provident quo quibusdam consectetur consequatur labore! Nobis, illum.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus et laudantium similique officia sint quasi a! Sunt error ab debitis quidem, quibusdam ad nesciunt asperiores quia delectus commodi. Tenetur, cupiditate.
+    </p>
+
+    <h2>Subtitulo da pagina</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolore, explicabo molestiae dignissimos nulla nobis, eius eos sint, praesentium sequi nesciunt laudantium quas voluptate provident perspiciatis corrupti esse illum repellendus!
+    </p>
+
+    <div id="promocao">
+        <h2>Promocao</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolore, explicabo molestiae dignissimos nulla nobis, eius eos sint, praesentium sequi nesciunt laudantium quas voluptate provident perspiciatis corrupti esse illum repellendus!
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.principal{
+    width: 920px;
+    margin: 0 auto;
+    height: 600px; 
+    border: 4px salmon solid;
+}
+
+.noticias{
+    width: 550px;
+    float: left;
+}
+
+.lateral{
+    width: 300px;
+    float: right;
+}
+.borda{
+    border: 1px solid black;
+    padding: 6px;
+    margin: 6px;
+}
+
+#rodape{
+    width: 920px;
+    margin: 0 auto;
+    background-color: gray;
+    color: black;
+}

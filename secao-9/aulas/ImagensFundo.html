@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+
+    <style>
+        /* 
+            repeat -> repete a imagem de fundo tanto na horizontal quanto na vertical.
+
+            no-repeat -> não repete a imagem de fundo.
+
+            repeat-x -> repete a imagem de fundo apenas na horizontal.
+
+            repeat-y -> repete a imagem de fundo apenas na vertical.
+
+            background-attachment: 
+            fixed -> a imagem de fundo permanece na mesma posciao
+            scrool -> a imagem de fundo move-se com o conteudo quando o usuario rola a pagina
+
+            background-position:
+            horizontal -> left, center, right
+            vertical -> top, center, bottom
+        */
+        .caixa{
+            width: 700px;
+            height: 300px;
+            border: 3px dotted red;
+            /* background-color: lightgreen;
+            background-image: url('img/fundo-css-escuro.png');
+            background-repeat: no-repeat; 
+            background-attachment: fixed; */
+            /* background-position: right center; */
+            /*  
+                Todas as propriedades resumidas
+                ordem: cor, imagem, repeatm attachment, position
+            
+                background-position-x: left;
+                background-position-y: top;
+            
+                background:
+                lightgreen 
+                url('img/fundo-css-escuro.png')
+                no-repeat
+                scroll
+                left top;
+            */
+            background:
+                url('img/fundo-css-escuro.png')
+                no-repeat
+                right center
+                ,
+                url('img/fundo-css-claro.png')
+                no-repeat
+                left center;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Titulo do texto</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis accusamus repudiandae optio a dolorum voluptatem iure voluptate dolorem laborum unde placeat consequatur ad autem molestiae, repellat aspernatur eum veniam.
+        </p>
+    </div>
+</body>
+</html>

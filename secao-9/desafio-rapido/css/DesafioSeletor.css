@@ -1,0 +1,14 @@
+h1{
+    color: lightseagreen;
+}
+h1+p{
+    border-top: 3px solid gray;
+    padding-top: 10px;
+}
+p>a{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+p.destaque{
+    color: rgb(121, 3, 121);
+}
