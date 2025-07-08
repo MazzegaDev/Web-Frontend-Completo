@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.conteudo{
+    background: #c5e3fe;
+    border-bottom: 1px solid black;
+    margin-top: 4.7rem;
+}
+
+.container{
+    width: 1145px;
+    margin: 0 auto;
+    padding: 1.4rem 0;
+}
+
+.link{
+    float: right;
+}
+.link a{
+    padding: 6px;
+    position: relative;
+    bottom: 36px;
+    right: 56px;
+    text-decoration: none;
+    color: black;
+}
+
+
+ul#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 475px;
+    float: right;
+}
+
+ul#menu li a{
+    float: left;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+ul#menu li a:hover{
+    color: #4c799f;
+}
+
+ul#menu li.destaque a:hover{
+    color: #c5e3fe;
+}
+
+ul#menu li.destaque a{
+    color: white;
+    border-radius: 1.2rem;
+    background-color: black;
+}
+
+#menu ul::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+#header ul::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+.texto-m{
+    width: 55%;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 2rem;
+    letter-spacing: -0.1rem;
+}
+
+.conteudo button{
+    display: block;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.fundo-img{
+    background: url('../img/fundo-topo.png') no-repeat right bottom;
+    background-size: 20rem;
+}
+
+h2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.titulo-tendencia{
+    background: url('../img/icone-tendencia.png') no-repeat left / contain;
+    padding: 0.2rem 0 0.2rem 2rem;
+}
+
+#tendencias{
+    padding: 0.8rem;
+}
+
+.item-tendencia{
+    width: 26%;
+    padding-left: 7%;
+    margin-bottom: 2rem;
+    position: relative;
+    float: left;
+}
+
+.numero{
+    font-size: 3rem;
+    font-weight: bold;
+    color: lightgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h3, h4{
+    margin: 0.2rem;
+}
+
+h4{
+    font-weight: 100;
+}
+
+.foto{
+    background: url('../img/icone1.png') no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+
+.foto2{
+    background: url('../img/icone2.png') no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+
+.foto3{
+    background: url('../img/icone3.png') no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+
+.foto4{
+    background: url('../img/icone4.png') no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+
+.foto5{
+    background: url('../img/icone4.png') no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+
+.foto6{
+    background: url('../img/icone4.png') no-repeat left / contain;
+    padding-left: 1.5rem;
+}
+
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#rodape{
+    background: #c5e3fe;
+    border-top: 1px solid black;
+}
