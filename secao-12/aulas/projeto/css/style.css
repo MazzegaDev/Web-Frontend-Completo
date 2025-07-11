@@ -1,0 +1,54 @@
+/* 
+    Anotacoes:
+    A tag header foi transformada em um Flex-container e tudo que esta dentro dela e um flex-item.
+    Todo elemento que eu quiser aplicar uma propriedade de Flexbox, eu preciso transformar o elemento em um Flex-container.
+    Exemplo: Quero alinhar os itens de uma ul, primeiro tenho que transformar a ul em um Flex-container.
+
+*/
+
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    
+}
+nav{
+    flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+ul a:link, a:visited{
+    padding: 10px;
+    text-decoration: none;
+    color: #484848;
+}
+
+nav ul a:hover{
+   color: #0b5cff;
+}
+
+.botao{
+    background-color: white;
+    padding: 5px 30px;
+    color: #0b5cff;
+    border: 2px solid #0b5cff;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #d3ddf1;
+}
+.botao.destaque:hover{
+    background-color: #5b8cec;
+}
+.botao.destaque{
+    background-color: #0b5cff;
+    color: white;
+}
