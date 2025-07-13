@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Mesclar</title>
+    <style>
+        /* 
+            Mesclando linhas e colunas do grid.
+            1-) Primeiro devemos definir classes para os elementos que queremos mesclar.
+            2-) Depois usamos o grid-column-start para definir a coluna inicial da mesclagem.
+            3-) Usamos o grid-column-end para definir a coluna final da mesclagem.
+
+            Quando a mesclagem ocorre o elemento que sofreu a mesclagem pula para o outra linha. Exemplo: |1|2|3|4|5|6|, antes da mesclagem do elemento 1 ate o elemento 2, |1   |2|3|4|5|6|.
+
+            grid-column-start -> mescla o grid horizontalmente.
+            gird-row-start -> mescla o grid verticalmente.
+        */
+        body{
+            font-size: 3rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding:20px;
+            /* border: 3px solid red; */
+        }
+
+        .grid{
+            /* height: 100vh; */
+            display: grid;
+            /* border: 3px solid blue; */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 30% 100px 4fr 1fr; */
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .item1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .item5{
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .item8{
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        /* .item6{
+            grid-row-start: 3;
+            grid-row-end: 5;
+        } */
+
+        .grid > div{
+            border: 5px solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+
+</body>
+</html>

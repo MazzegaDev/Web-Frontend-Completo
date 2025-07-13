@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - colunas</title>
+    <style>
+        /* 
+            grid-template-columns -> define quantas colunas tera o grid.
+            Modo de usar: grid-template-columns: 40% 40% 20%; -> Uma coluna com 40% de largura, outra com 40% e a ultima com 20%. Tambem podemos usar a unidade de medida fr (fracao), onde ele pega 100% do espaco disponivel e divide entre as colunas. Exemplo: grid-template-columns: 1fr 1fr 1fr; -> onde cada coluna tera 1/3 do espaco disponivel. 
+
+            Podemos usar qualquer unidade de medida, como px, em, rem, etc. Na criacao de colunas podemos usar a propriedade repeat() para repetir colunas de forma mais simples. Para isso basta usar a sintaxe: grid-template-columns: repeat(3, 40%); -> onde 3 e o numero de colunas e 40% a largura de cada coluna   
+        */
+        body{
+            font-size: 3rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .grid > div{
+            border: 3px solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+
+</body>
+</html>
