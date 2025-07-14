@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Mesclar propriedades simplificadas</title>
+    <style>
+        /* 
+            Forma simplificada de mesclar linhas e colunas do grid>
+            Basta usar: grid-column: start / end; o mesmo vale para linhas com grid-row: start / end;
+
+            Podemos tambem nomear as linhas e colunas do grid.
+            Basta usar:  grid-template-columns: [a]1fr [b] 1fr [c] 1fr [d];
+
+            Com isso podemos usar o nome das linhas e colunas para mesclar os elementos.
+            Basta usar: grid-row: <start>a / <end> c;
+            
+            Podemos usar o span com grid-row e grid-column para mesclar um elemento por um numero de linhas ou colunas.
+            Exemplo: grid-column: span 2; ou grid-row: span 2;, O span e relativo ao numero de linhas ou colunas que o elemento deve ocupar. Exemplo: se o elemento comeca na coluna 1 e seu span e 2, ele vai ocupar 2 colunas ou linhas na frente de seu inicio
+        */
+        body{
+            font-size: 3rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            /* border: 3px solid red; */
+        }
+
+        .grid{
+            /* height: 100vh; */
+            display: grid;
+            /* border: 3px solid blue; */
+            grid-template-columns: [a]1fr [b] 1fr [c] 1fr [d];
+            /* grid-template-rows: 30% 100px 4fr 1fr; */
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .item1{
+            grid-column: a / c;
+        }
+
+        .grid > div{
+            border: 5px solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+
+</body>
+</html>
