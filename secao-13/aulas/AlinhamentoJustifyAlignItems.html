@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento - Justify e align items</title>
+    <style>
+        /* 
+           justify-items:
+           Ele alinha os itens dentro de cada celula do grid. Este metodo de alinhamento usa o main axis -> horizontal.
+
+           Seus valores:
+           start: Alinha os grids itens horizontalmente no inicio da celula do grid container
+
+           center: Alinha os grids itens horizontalmente no centro da celula do grid container
+           
+           end: Alinha os grids itens horizontalmente no fim da celula do grid container
+
+           stretch: Valor padrao. Faz os grids itens ocuparem todo o espaco disponivel da celula do grid container
+
+           align-items:
+           Ele alinha os itens dentro de cada celula do grid. Este metodo de alinhamento usa o cross axis -> vertical.
+
+           Seus valores:
+           start: Alinha os grids itens horizontalmente no inicio da celula do grid container
+
+           center: Alinha os grids itens horizontalmente no centro da celula do grid container
+           
+           end: Alinha os grids itens horizontalmente no fim da celula do grid container
+
+           stretch: Valor padrao. Faz os grids itens ocuparem todo o espaco disponivel da celula do grid container
+
+
+        */
+        body{
+            font-size: 1.2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid{
+            border: 5px solid red;
+            row-gap: 20px;
+            column-gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            /* justify-items: start; */
+            align-items: center;
+        }
+
+       .grid > div{
+            border: 5px solid greenyellow;
+       }
+       
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Grid Area</title>
+    <style>
+        /* 
+            Grid area.
+            O grid area e uma forma de definir uma area do grid ele define linhas e colunas de um modo mais  simpples.
+            Temos 4 parametros para definir o grid area, sendo eles: 
+            grid-area: <grid-row-start> <grid-column-start> / <grid-row-end> / <grid-column-end>;, tambem podemos usar o nome das linhas e colunas do grid para definir ou podemos usar o span. Sendo o primeiro parametro para o row start e row end e o segundo parametro para o column start e column end. O grid area tambem pode ser usado para definir o nome de uma area do grid. Para isso usamos header{grid-area: cabecalho;} 
+        */
+        body{
+            font-size: 3rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            /* border: 3px solid red; */
+        }
+
+        .grid{
+            /* height: 100vh; */
+            display: grid;
+            /* border: 3px solid blue; */
+            grid-template-columns: [a]1fr [b] 1fr [c] 1fr [d];
+            /* grid-template-rows: 30% 100px 4fr 1fr; */
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        /* .item2{
+            grid-column:span 2;
+        }
+        .item3{
+            grid-column: span 2;
+        }
+
+        .item4{
+           grid-row: span 2;
+        }
+
+        .item7{
+            grid-column: a / d;
+        } */
+        .grid > div{
+            border: 5px solid pink;
+        }
+
+        .item8{
+            grid-area: span 2/ span 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+
+</body>
+</html>

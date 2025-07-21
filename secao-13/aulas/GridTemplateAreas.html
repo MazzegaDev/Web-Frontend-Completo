@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Template area</title>
+    <style>
+        /* 
+            grid-template-areas.
+            O grid-template-areas define a ordem de exibicao de uma area do grid de forma mais simples.
+            
+            Para usarmos este recurso basta usar: grid-template-areas: 
+                'cabecalho'
+                'navegacao'
+                'prinicipal'
+                'rodape'
+            ;
+            Isso vai definir a order de exibicao das areas do grid.
+
+            Se definimos duas colunas para nosso grid nosso conteudo vai ser exibido so na primeira coluna, para resolver isso precisamos definir duas vezes o nome da area do grid, sendo assim:
+            grid-template-areas:
+                  1 - coluna    2 - coluna
+                'cabecalho cabecalho'
+                'navegacao navegacao'
+                'prinicipal prinicipal'
+                'rodape rodape'
+            ;
+            Com isso o conteudo vai ser exibido nas duas colunas, mas a ordem de exibicao vai ser a mesma.
+
+        */
+        body{
+            font-size: 1.2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid{
+            border: 5px solid red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-areas: 
+                'cabecalho cabecalho cabecalho'
+                'navegacao principal principal'
+                'navegacao rodape rodape'
+
+            ;
+        }
+
+        header, nav, main, footer{
+            border: 5px solid pink;
+        }
+        
+        header{grid-area: cabecalho;}
+        nav{grid-area: navegacao;}
+        main{grid-area: principal;}
+        footer{grid-area: rodape;}
+       
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <header>Cabecalho</header>
+        <nav>home | produtos | login | cadastro</nav>
+        <main>
+            <h2>Conteudo do sistema</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio nisi libero assumenda tempora obcaecati sequi eos
+            </p>
+        </main>
+        <footer>Rodape</footer>
+    </div>
+
+</body>
+</html>

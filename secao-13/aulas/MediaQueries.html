@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade - Media queries</title>
+    <style>
+        /* 
+            Media queries.
+            As medias queries sao usadas para deixar sua pagina responsiva, ou seja, para que ela se adapte a diferentes tamanhos de tela.
+            Para isso usamos a regra css @media. Exemplo: 
+            @media (max-width: 600px){
+                definicao aqui
+            }
+            Isso vai aplicar as regras css dentro do bloco apenas se a largura da tela for menor ou igual a 600px.
+
+            Podemos usar tambem o min-width, que vai aplicar as regras css dentro do bloco apenas se a largura da tela for maior ou igual a 600px por exemplo.
+
+            Resumindo max aplica se for menor ou igual,
+            e min aplica se for maior ou igual.
+
+
+            Os formatos responsivos mais comuns sao:
+            0 ate 600px - mobile
+            600 ate 768px - tablet
+            768 ate 1200px - displays maiores
+        */
+        body{
+            font-size: 1.2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid{
+            border: 5px solid red;
+            display: grid;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: 1fr;
+                grid-template-areas: 
+                    'cabecalho'
+                    'navegacao'
+                    'principal'
+                    'rodape'
+                ;
+        }
+
+        @media (min-width: 600px){
+            .grid{      
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: 
+                    'cabecalho cabecalho'
+                    'navegacao principal'
+                    'rodape rodape'
+
+                ;
+            }
+        }
+
+        @media (min-width: 1200px){
+            .grid{      
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: 
+                    'cabecalho cabecalho'
+                    'navegacao principal'
+                    'rodape rodape'
+
+                ;
+            }
+        }
+
+
+        header, nav, main, footer{
+            border: 5px solid pink;
+        }
+        
+        header{grid-area: cabecalho;}
+        nav{grid-area: navegacao;}
+        main{grid-area: principal;}
+        footer{grid-area: rodape;}
+       
+    </style>
+</head>
+<body>
+
+    <div class="grid">
+        <header>Cabecalho</header>
+        <nav>Menu de navegacao</nav>
+        <main>
+            <h2>Conteudo do sistema</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio nisi libero assumenda tempora obcaecati sequi eos
+            </p>
+        </main>
+        <footer>Rodape</footer>
+    </div>
+
+</body>
+</html>

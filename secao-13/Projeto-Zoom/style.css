@@ -1,0 +1,183 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+
+.texto-destaque{
+    color: #0b5cff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    
+}
+
+footer{
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+ul a:link, a:visited{
+    padding: 10px;
+    text-decoration: none;
+    color: #484848;
+    font-size: 1.2rem;
+}
+
+nav ul a:hover{
+   color: #0b5cff;
+}
+
+.botao{
+    background-color: white;
+    padding: 5px 30px;
+    color: #0b5cff;
+    border: 2px solid #0b5cff;
+    border-radius: 25px;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.botao:hover{
+    background-color: #d3ddf1;
+}
+.botao.destaque:hover{
+    background-color: #5b8cec;
+}
+.botao.destaque{
+    background-color: #0b5cff;
+    color: white;
+}
+
+
+/* Grid */
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 10px;
+    grid-template-areas:
+        'cabecalho cabecalho'
+        'entrada orgs'
+        'pessoas solucoes'
+        'rodape rodape'
+    ;
+}
+
+/* Responsividade */
+
+
+
+/* Layout */
+header{grid-area: cabecalho;}
+footer{grid-area: rodape;}
+section#entrada{
+    grid-area: entrada;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#orgs{
+    grid-area: orgs;
+    /* border: 2px solid greenyellow; */
+
+}
+
+section#pessoas{
+    grid-area: pessoas;
+    /* border: 2px solid violet; */
+}
+
+section#solucoes{
+    grid-area: solucoes;
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+section#orgs > img{
+    max-width: 100%;
+}
+section#pessoas > img{
+    max-width: 100%;
+}
+
+@media(max-width: 768px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas:
+            'cabecalho'
+            'entrada'
+            'orgs'
+            'pessoas'
+            'solucoes'
+            'rodape'
+        ;
+    }
+
+    header{
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    header > div{
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+
+    header > div a{
+        margin: 0.8rem 0;
+    }
+   
+
+}
