@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando Atributos</title>
+    <style>
+        
+    </style>
+    
+</head>
+<body>
+    <!-- 
+        Selecionando atributos:
+        Podemos selecionar atributos usando JavaScript para isso usamos o metodo:
+        getAttribute(atributo que queremos selecionar). Exemplo de uso
+        const img = document.querySelector('#img')
+        console.log(img.getAttribute('src'))
+
+        O metodo getAttribute e mais utilizado se quermos passar um atributo como parametro
+        let atributo = 'src'
+        console.log(img.getAttribute(atributo))
+
+        Tambem podemos selecionar um atributo de uma maneira mais simpls, fazemos como se fossemos selecionar um indice de um array. Exemplo de uso:
+        console.log(img['src']). Ou ainda de maniera ainda mais facil apenas colocando o nome do atributo. Exemplo de uso
+        console.log(img.src)
+
+
+    -->
+    
+    <img src="img/celular.png" width="500" id="img">
+    <a href="https://www.google.com" target="_blank" id="link">Clique aqui</a>
+    <button onclick="alterar()">Alterar link e imagem</button>
+
+	<script type="text/javascript">
+
+        function alterar(){
+            const img = document.querySelector('#img')
+            img.src = 'img/grafico.png'
+
+            const link = document.querySelector('#link')
+            link.href = 'https://www.github.com'
+            
+        }
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando elementos</title>
+</head>
+<body>
+	<form name="cadastro">
+		<input type="text" name="nome">
+		<input type="text" name="email">
+		<select name="sexo">
+			<option value="">>---<</option>
+			<option value="masculino">Masculino</option>
+			<option value="feminino">Feminino</option>
+		</select>
+	</form>
+	
+	<button onclick="ValorAuto()">Clicar</button>
+
+	<script type="text/javascript">
+		// const obj = document.getElementsByName('cadastro')
+		// document.cadastro.sexo.value = 'masculino'
+		function ValorAuto(){
+			document.cadastro.nome.value = 'Guilherme'
+			document.cadastro.email.value = 'Gmazzega@gmail.com'
+			document.cadastro.sexo.value = 'masculino'
+		}
+	</script>
+
+</body>
+
+</html>

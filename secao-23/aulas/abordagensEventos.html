@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abordagens com eventos</title>
+    <style>
+        *{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button btn>Clique aqui</button>
+
+    <script type="text/javascript">
+        //Evento DOM tradicional
+        function exec(){
+            console.log('exec1')
+            btn.removeEventListener('click',exec)
+        }
+        function exec2(){
+            console.log('exec2')
+        }
+        btn = document.querySelector('[btn]')
+        // btn.onclick = exec
+
+        //Ouvintes de eventos DOM -> recomendado 
+        btn.addEventListener('click', exec)
+    </script>
+</body>
+</html>

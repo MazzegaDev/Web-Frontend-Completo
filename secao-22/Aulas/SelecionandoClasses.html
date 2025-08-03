@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando classes</title>
+    <style>
+        body{
+            font-size: 35px;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        .laranja{
+            background-color: orange;
+        }
+        .texto{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+	<!-- 
+        Selecionando classes
+        Podemos descobrir quantas classes um elemento tem usando o metodo classList, Exemplo:
+        const classes = obj.classList
+        classes.classList
+
+        Podemos descobrir se um elemento possui uma classe usando o metodo contains, Exemplo:
+        const classes = obj.classList
+        classes.contains('nome da classe')
+
+        Podemos adicionar uma classe em um elemento usando o metodo add, Exemplo:
+        const classes = obj.classList
+        classes.add('nome da classe')
+
+        Podemos remover uma classe em um elemento usando o metodo remove, exemplo:
+        const classes = obj.classList
+        classes.remove('nome da classe')
+
+        Podemos alternar entre classes em um elemento usando o metodo toggle, exemplo:
+        const classes = obj.classList
+        classes.toggle('nome da classe')
+
+        Tambem podemos manipular classes diretamente sem utilizar o classList, exemplo:
+        obj.className = 'nome da classe', atentese que esse metodo substitui as classes ao inves de alterar, Exemplo:
+        antes do className:
+        <span class="vermelho">Guilherme</span> 
+        Apos o className:
+        <span class="texto">Guilherme</span>
+
+        Podemos percorrer as classes como se fossem um array, Exemplo:
+        const classes = obj.classList
+        classes.forEach(i => console.log(i))
+    -->
+	<span class="vermelho texto">Guilherme</span>
+
+    <button onclick="exec()">Clique aqui</button>
+	<script type="text/javascript">
+        function exec(){
+            const obj = document.querySelector('span')
+            const classes = obj.classList
+
+            classes.forEach(item => console.log(item))
+        }
+
+
+	</script>
+
+</body>
+</html>

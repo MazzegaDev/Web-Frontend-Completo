@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atributos personalizados</title>
+</head>
+<body>
+	<!-- 
+        Atributos personalizados
+        Os atributos personalizados nao podem ser acessados da forma tradicional pois nao sao reconhecidos pelo HTML, para acesar eles temos que usar o atributo getAttribute('atributo'). Exemplo:
+        console.log(obj.getAttribute('quantidade')).
+
+        Alem disso podemos setar atributos originais ou personalizados com o metodo setAttribute('atributo',valor/'valor'). Exemplo:
+        obj.setAttribute('quantidade',10).
+
+        Uma maneira padrao de definir atributos personalizados e com data. Exemplo:
+        <span data-status="pendente">2 itens no carrinho</span>
+
+        Com isso tambem podemos recuperar esse valor no JavaScript Exemplo:
+        console.log(obj.dataset) ou console.log(obj.getAttribute('data-status'))
+
+        Podemos alterar seu valor Exemplo:
+        obj.dataset.status = 'Finalizado'.
+
+        Podemos verificar se o atributo existe Exemplo:
+        console.log(obj.hasAttribute('data-status'))
+
+        Podemos remover um atributo Exemplo:
+        console.log(obj.removeAttribute('data-status'))
+
+        Podemos acessar todos os atributos Exemplo:
+        console.log(obj.attributes). Nesse modo temos varias opcoes de acessar os atributos sendo elas:
+        apenas colocando o nome do atributo -> obj.atributes.quantidade
+        por indice -> obj.atributes[1]
+        notacao de objetos -> obj.quantidade['quantidade']. E importante lembrar que essa maneira de acessar atributos retorna o atributo inteiro -> id='itens', e nao apenas seu valor
+        
+        -->
+	<span id="itens" quantidade="2" data-status="pendente">2 itens no carrinho</span>
+
+    <ul id="lista">
+        <li codigo="001">Guilherme</li>
+        <li codigo="002">Jamilton</li>
+    </ul>
+	
+    <label id="labelNome" for="nome">Nome</label>
+    <input type="text" id="nome" name="nome">
+
+	<script type="text/javascript">
+        const obj = document.getElementById('labelNome')
+        console.log(obj.htmlFor)
+
+	</script>
+
+</body>
+</html>

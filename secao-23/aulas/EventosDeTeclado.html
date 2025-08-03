@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de telcado</title>
+</head>
+<body>
+    <input type="text" id="entrada">
+
+    <script type="text/javascript">
+        function exec(){
+            console.log('Executar')
+        }
+        const obj = document.getElementById('entrada')
+        // obj.addEventListener('keydown', exec)
+        // obj.addEventListener('keyup', exec)
+        obj.addEventListener('keypress', exec)
+    </script>
+</body>
+</html>

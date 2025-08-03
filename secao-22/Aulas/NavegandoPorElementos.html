@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navegando por elementos</title>
+    <style>
+        div#itens{
+            background-color: orange;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- 
+        Navegando por elementos
+
+        Atributos: (OBS: se tiver espaco entre os elemetos HTML eles seram contabilizados, exeto o atributo children)
+        parentNode -> exibe quem e o pai do objeto selecionado
+
+        childNodes -> exibe quem e o filho do objeto selecionado
+
+        firstChild -> exibe quem e o primeiro filho do objeto 
+        selecionado
+
+        lastChild -> exibe quem e o ultimo filho do objeto selecionado
+
+        nextSibling -> exibe quem e o proximo irmao do objeto
+
+        previousSibling -> exibe quem e o irmao anterior do objeto selecionado
+
+        children -> exibe apenas os filhos do objeto selecionado
+
+        Para contornar esse problema de selecionar espacos do HTML basta usar o Element. 
+        Ex: firstElementChild
+
+
+    -->
+    <div>Irmao anterior</div>
+    <div id="itens">
+        <p>Primeiro elemento</p>
+        <p>Segundo elemento</p>
+        <p>Terceiro elemenot</p>
+        <p>Quarto elemento</p>
+    </div>
+    <div>Proximo irmao</div>
+
+
+	<script type="text/javascript">
+		const lista = document.querySelector('div#itens')
+        console.log(lista.parentNode) 
+	</script>
+
+</body>
+
+</html>
