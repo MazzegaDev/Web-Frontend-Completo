@@ -107,7 +107,7 @@
   },
   "include": [
     "./src"
-  ],
+, "dist/Secao27/modules/declaration_files.js"  ],
   "exclude": [
     ".prettierrc"
   ]
